@@ -1,7 +1,7 @@
 # Message Verification and Signing
-Ravencore implementation of [bitcoin message signing and verification](http://bitcoin.stackexchange.com/questions/3337/what-are-the-safety-guidelines-for-using-the-sign-message-feature/3339#3339). This is used to cryptographically prove that a certain message was signed by the holder of an address private key.
+b4bcore implementation of [bitcoin message signing and verification](http://bitcoin.stackexchange.com/questions/3337/what-are-the-safety-guidelines-for-using-the-sign-message-feature/3339#3339). This is used to cryptographically prove that a certain message was signed by the holder of an address private key.
 
-For more information refer to the [ravencore-message](https://github.com/RavenDevKit/ravencore-message) github repo.
+For more information refer to the [b4bcore-message](https://github.com/B4Bcoin/b4bcore-message) github repo.
 
 ## Installation
 Message Verification and Signing is implemented as a separate module and you must add it to your dependencies:
@@ -9,13 +9,13 @@ Message Verification and Signing is implemented as a separate module and you mus
 For node projects:
 
 ```bash
-npm install ravencore-message --save
+npm install b4bcore-message --save
 ```
 
 For client-side projects:
 
 ```bash
-bower install ravencore-message --save
+bower install b4bcore-message --save
 ```
 
 ## Example
@@ -29,7 +29,7 @@ var signature = Message('hello, world').sign(privateKey);
 To verify a message:
 
 ```javascript
-var address = 'RGRsG7UQc3AmvdrhPDngpPjvTNhJQFeHYj';
+var address = 'BGRsG7UQc3AmvdrhPDngpPjvTNhJQFeHYj';
 var signature = 'G5cFMHRysjcxkBJ7mol8l3cjPbFQFQ68fNqTGehTO9/cLNUaflt3gQT//yAUp5fqWF0snDlZYkXJoooazBicRTg=';
 var verified = Message('hello, world').verify(address, signature);
 ```

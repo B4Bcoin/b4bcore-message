@@ -1,7 +1,7 @@
 {
-  "name": "ravencore-message",
+  "name": "b4bcore-message",
   "version": "1.0.3",
-  "description": "Ravencoin Messages for Ravencore",
+  "description": "B4Bcoin Messages for b4bcore",
   "author": "Under",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "build": "gulp"
   },
   "keywords": [
-    "ravencoin",
-    "ravencore",
+    "b4bcoin",
+    "b4bcore",
     "btc",
     "satoshi",
     "message",
@@ -20,14 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RavenDevKit/ravencore-message.git"
+    "url": "https://github.com/B4Bcoin/b4bcore-message.git"
   },
   "dependencies": {
-    "@ravendevkit/ravencore-lib": "^1.0.4"
+    "@B4Bcoin/b4bcore-lib": "git+https://git@github.com/B4Bcoin/b4bcore-lib"
   },
   "peerDependencies": {},
   "devDependencies": {
-    "ravencore-build": "RavenDevKit/ravencore-build",
+    "b4bcore-build": "B4Bcoin/b4bcore-build",
     "brfs": "^1.3.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10"

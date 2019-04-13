@@ -1,44 +1,44 @@
-# Ravencoin Message Verification and Signing for Ravencore
+# B4Bcoin Message Verification and Signing for B4Bcore
 
 
 
 
-ravencore-message adds support for verifying and signing ravencoin messages in [Node.js](http://nodejs.org/) and web browsers.
+b4bcore-message adds support for verifying and signing b4bcoin messages in [Node.js](http://nodejs.org/) and web browsers.
 
-See [the main ravencore repo](https://github.com/RavenDevKit/ravencore) for more information.
+See [the main b4bcore repo](https://github.com/B4Bcoin/b4bcore) for more information.
 
 ## Getting Started
 
 ```sh
-npm install ravencore-message
+npm install b4bcore-message
 ```
 
 ```sh
-bower install ravencore-message
+bower install b4bcore-message
 ```
 
 To sign a message:
 
 ```javascript
-var ravencore = require('ravencore-lib');
-var Message = require('ravencore-message');
+var b4bcore = require('b4bcore-lib');
+var Message = require('b4bcore-message');
 
-var privateKey = ravencore.PrivateKey.fromWIF('5K2DxqJ9kLFL3hF3KEWDftAig3TyAXenDxpr27PaLBieuSFo5PQ');
+var privateKey = b4bcore.PrivateKey.fromWIF('5K2DxqJ9kLFL3hF3KEWDftAig3TyAXenDxpr27PaLBieuSFo5PQ');
 var signature = Message('hello, world').sign(privateKey);
 ```
 
 To verify a message:
 
 ```javascript
-var address = 'RGRsG7UQc3AmvdrhPDngpPjvTNhJQFeHYj';
+var address = 'BGRsG7UQc3AmvdrhPDngpPjvTNhJQFeHYj';
 var signature = 'G5cFMHRysjcxkBJ7mol8l3cjPbFQFQ68fNqTGehTO9/cLNUaflt3gQT//yAUp5fqWF0snDlZYkXJoooazBicRTg=';
 var verified = Message('hello, world').verify(address, signature);
 ```
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/RavenDevKit/ravencore/blob/master/CONTRIBUTING.md) on the main ravencore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/B4Bcoin/b4bcore/blob/master/CONTRIBUTING.md) on the main b4bcore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/RavenDevKit/ravencore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/B4Bcoin/b4bcore/blob/master/LICENSE).
